@@ -1,0 +1,5 @@
+---
+# defaults file for godev
+#
+go_url: https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
+go_ver: go1.20.4.linux-amd64.tar.gz
