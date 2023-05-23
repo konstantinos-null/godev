@@ -5,10 +5,10 @@
   ansible.builtin.get_url:
     url: "{{ go_url }}"
     checksum: sha256:698ef3243972a51ddb4028e4a1ac63dc6d60821bf18e59a807e051fee0a385bd
-    dest: /tmp/"{{ go_ver }}"
+    dest: /tmp/{{ go_ver }}
 
 - name: Extract golang
   ansible.builtin.unarchive:
-    src: /tmp/"{{ go_ver }}"
+    src: /tmp/{{ go_ver }}
     dest: /usr/local/
   become: true
